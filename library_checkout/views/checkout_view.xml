@@ -78,7 +78,7 @@
             <group name="group_col2">
               <field name="state" />
               <field name="closed_date"
-                     attrs="{'invisible':[('state', 'in', ['new', 'open'])]}"
+                     invisible="state in ('new', 'open')"
               />
             </group>
           </group>
