@@ -9,7 +9,7 @@
 
     <menuitem id="menu_library_member"
       name="Members"
-      action="action_library_member"
+      action="library_member.action_library_member"
       parent="library_app.library_menu" />
 
 </odoo>
