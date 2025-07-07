@@ -1,23 +1,24 @@
 <?xml version="1.0"?>
 <odoo>
 
-    <act_window id="action_library_checkout"
-      name="Checkouts"
-      res_model="library.checkout"
-      view_mode="kanban,tree,form,activity,calendar,graph,pivot"
-    />
+    <record model="ir.actions.act_window" id="action_library_checkout">
+            <field name="name">Checkouts</field>
+            <field name="res_model">library.checkout</field>
+            <field name="view_mode">kanban,tree,form,activity,calendar,graph,pivot</field>
+        </record>
+
 
     <menuitem id="menu_library_checkout"
               name="Checkout"
               action="action_library_checkout"
               parent="library_app.library_menu" />
 
+    <record model="ir.actions.act_window" id="action_library_stage">
+            <field name="name">Checkout Stages</field>
+            <field name="res_model">library.checkout.stage</field>
+            <field name="view_mode">list,form</field>
+        </record>
 
-    <act_window id="action_library_stage"
-      name="Checkout Stages"
-      res_model="library.checkout.stage"
-      view_mode="tree,form"
-    />
 
     <menuitem id="menu_library_stage"
               name="Checkout Stages"

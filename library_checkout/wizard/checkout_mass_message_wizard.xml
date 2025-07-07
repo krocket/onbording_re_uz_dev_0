@@ -24,12 +24,14 @@
     </field>
   </record>
 
-  <act_window id="action_checkout_message"
-    name="Send Messages"
-    binding_model="library.checkout"
-    res_model="library.checkout.massmessage"
-    view_mode="form"
-    target="new"
-    />
+
+   <record model="ir.actions.act_window" id="action_checkout_message">
+            <field name="name">Send Messages</field>
+            <field name="res_model">library.checkout.massmessage</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+
 
 </odoo>
