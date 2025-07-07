@@ -13,7 +13,7 @@
               name="Book"
               action="action_library_book"
               parent="library_menu" />
-    />
+
 
     <act_window id="action_library_categ"
       name="Categories"
@@ -25,6 +25,6 @@
               name="Categories"
               action="action_library_categ"
               parent="library_menu" />
-    />
+
 
 </odoo>
