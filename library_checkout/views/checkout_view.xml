@@ -21,7 +21,7 @@
           <button name="button_done"
             type="object"
             string="Return Books"
-            states="open,cancel"
+                  invisible="state not in ('open', 'cancel')"
             class="oe_highlight" />
             <!--attrs="{'invisible':[('state', 'in', ['new', 'done'])]}"-->
 
