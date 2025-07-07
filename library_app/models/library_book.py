@@ -1,5 +1,5 @@
 from odoo import api, fields, models
-from odoo.exceptions import Warning
+from odoo.exceptions import UserError
 from odoo.exceptions import ValidationError
 
 
@@ -62,10 +62,10 @@ class Book(models.Model):
     def button_check_isbn(self):
         for book in self:
             if not book.isbn:
-                raise Warning(
+                raise UserError(
                     'Please provide an ISBN13 for %s' % book.name)
             if book.isbn and not book._check_isbn():
-                raise Warning(
+                raise UserError(
                     '%s is an invalid ISBN' % book.isbn)
         return True
 
